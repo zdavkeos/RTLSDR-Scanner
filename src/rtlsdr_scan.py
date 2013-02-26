@@ -385,6 +385,8 @@ class DialogPrefs(wx.Dialog):
         self.gridDev.SetColLabelValue(4, "LO\n(MHz)")
         self.gridDev.SetColFormatFloat(3, -1, 3)
         self.gridDev.SetColFormatFloat(4, -1, 3)
+        self.gridDev.SetColLabelSize(grid.GRID_AUTOSIZE)
+        self.gridDev.SetRowLabelSize(grid.GRID_AUTOSIZE)
 
         attributes = grid.GridCellAttr()
         attributes.SetBackgroundColour(self.gridDev.GetLabelBackgroundColour())
